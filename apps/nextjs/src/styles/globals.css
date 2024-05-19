@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwind";
+@import "@repo/ui/src";
 
 :root {
   --foreground-rgb: 0, 0, 0;

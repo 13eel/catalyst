@@ -5,7 +5,9 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
-    "./*": "./src/**/*.tsx"
+    "./components/*": "./src/components/*.tsx",
+    "./core/*": "./src/core/*.tsx",
+    "./index.css": "./src/index.css"
   },
   "scripts": {
     "add": "pnpm dlx shadcn-ui add",
