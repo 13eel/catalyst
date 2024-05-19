@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@repo/tsconfig": "workspace:*",
+    "@repo/prettier-config": "workspace:*",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -26,5 +28,6 @@
     "eslint-plugin-react-refresh": "^0.4.6",
     "typescript": "^5.4.5",
     "vite": "^5.2.0"
-  }
+  },
+  "prettier": "@repo/prettier-config"
 }

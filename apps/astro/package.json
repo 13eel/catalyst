@@ -7,6 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "astro": "astro"
   },
   "dependencies": {
@@ -21,6 +22,8 @@
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.8.0",
+    "@repo/prettier-config": "workspace:*",
     "@repo/tsconfig": "workspace:*"
-  }
+  },
+  "prettier": "@repo/prettier-config"
 }
