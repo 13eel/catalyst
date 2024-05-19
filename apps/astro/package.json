@@ -8,7 +8,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "format": "prettier --check . --ignore-path ../../.gitignore",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
@@ -22,8 +23,10 @@
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.8.0",
+    "@repo/eslint-config": "workspace:*",
     "@repo/prettier-config": "workspace:*",
-    "@repo/tsconfig": "workspace:*"
+    "@repo/tsconfig": "workspace:*",
+    "eslint": "^8"
   },
   "prettier": "@repo/prettier-config"
 }

@@ -1,10 +1,12 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+  "eslint.experimental.useFlatConfig": true,
   "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
+    { "pattern": "apps/*/" },
+    { "pattern": "packages/*/" },
+    { "pattern": "tooling/*/" }
   ],
   "files.associations": {
     "*.json": "jsonc"
