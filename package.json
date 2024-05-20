@@ -1,6 +1,10 @@
 {
   "name": "catalyst",
   "private": true,
+  "engines": {
+    "node": ">=20.13.0"
+  },
+  "packageManager": "pnpm@9.1.1",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev --parallel",
@@ -9,6 +13,7 @@
     "lint:ws": "pnpm dlx sherif@latest",
     "format": "turbo format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
     "format:fix": "turbo format --continue -- --write --cache --cache-location node_modules/.cache/.prettiercache",
+    "postinstall": "pnpm lint:ws",
     "ui-add": "pnpm -F ui ui-add"
   },
   "devDependencies": {
@@ -17,10 +22,6 @@
     "prettier": "^3.2.5",
     "typescript": "^5.4.5",
     "turbo": "latest"
-  },
-  "packageManager": "pnpm@8.9.0",
-  "engines": {
-    "node": ">=18"
   },
   "prettier": "@repo/prettier-config"
 }
