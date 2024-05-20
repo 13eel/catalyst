@@ -1,3 +1,5 @@
+import "@total-typescript/ts-reset";
+
 import { cx } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 
