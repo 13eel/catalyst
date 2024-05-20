@@ -173,6 +173,9 @@ importers:
 
   apps/vite-swc:
     dependencies:
+      '@repo/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -180,9 +183,15 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../tooling/eslint
       '@repo/prettier-config':
         specifier: workspace:*
         version: link:../../tooling/prettier
+      '@repo/tailwind-config':
+        specifier: workspace:*
+        version: link:../../tooling/tailwind
       '@repo/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/typescript
@@ -213,6 +222,15 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.4.6
         version: 0.4.7(eslint@8.57.0)
+      postcss:
+        specifier: ^8.4.38
+        version: 8.4.38
+      postcss-import:
+        specifier: ^16.1.0
+        version: 16.1.0(postcss@8.4.38)
+      tailwindcss:
+        specifier: ^3.4.3
+        version: 3.4.3
       typescript:
         specifier: ^5.4.5
         version: 5.4.5
