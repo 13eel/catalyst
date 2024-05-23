@@ -1,3 +1,5 @@
+import MillionLint from "@million/lint";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   transpilePackages: ["@repo/ui"],
@@ -7,4 +9,4 @@ const nextConfig = {
   typescript: { ignoreBuildErrors: true },
 };
 
-export default nextConfig;
+export default MillionLint.next({ rsc: true })(nextConfig);
