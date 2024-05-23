@@ -4,11 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "clean": "git clean -xdf .next .turbo node_modules",
+    "dev": "next dev",
     "format": "prettier --check . --ignore-path ../../.gitignore",
-    "lint": "eslint"
+    "lint": "eslint",
+    "start": "next start"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
